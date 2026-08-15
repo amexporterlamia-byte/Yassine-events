@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Yassine Events | Luxury Event Planner & Wedding Organizer Marrakech</title>
+
     <meta name="description" content="Organisation d'événements de luxe, mariages d'exception, décors romantiques et matériel de réception à Marrakech.">
-    
-    <!-- Open Graph / Meta -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Yassine Events | Ultra Luxury Events Marrakech" />
-    <meta property="og:description" content="Mariages d'exception, soirées privées, décors romantiques et matériel de réception à Marrakech." />
-    
-    <!-- Tailwind CSS CDN -->
+    <meta name="theme-color" content="#07080A">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yassine Events | Luxury Events Marrakech">
+    <meta property="og:description" content="Mariages d'exception, soirées privées, décors romantiques et matériel de réception à Marrakech.">
+    <meta property="og:image" content="./logo.JPG">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -23,7 +28,7 @@
                             100: '#FFF7D6',
                             300: '#FCE082',
                             400: '#F6CD4C',
-                            500: '#D4AF37', // Metallic Gold Base
+                            500: '#D4AF37',
                             600: '#AA820A',
                             700: '#856404'
                         },
@@ -42,807 +47,1983 @@
             }
         }
     </script>
-    
-    <!-- FontAwesome & Google Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+
+    <!-- FontAwesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Montserrat', 'Cairo', sans-serif;
             background-color: #07080A;
             color: #E2E8F0;
-            scroll-behavior: smooth;
+            overflow-x: hidden;
         }
+
         .font-serif-title {
             font-family: 'Cinzel', serif;
         }
+
         .gold-gradient-text {
-            background: linear-gradient(135deg, #FFE898 0%, #D4AF37 50%, #9A7718 100%);
+            background: linear-gradient(
+                135deg,
+                #FFE898 0%,
+                #D4AF37 50%,
+                #9A7718 100%
+            );
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .gold-btn {
-            background: linear-gradient(135deg, #D4AF37 0%, #AA820A 100%);
+            background: linear-gradient(
+                135deg,
+                #D4AF37 0%,
+                #AA820A 100%
+            );
             transition: all 0.3s ease;
         }
+
         .gold-btn:hover {
-            background: linear-gradient(135deg, #F6CD4C 0%, #D4AF37 100%);
+            background: linear-gradient(
+                135deg,
+                #F6CD4C 0%,
+                #D4AF37 100%
+            );
+
             box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
             transform: translateY(-2px);
         }
+
         .glass-card {
             background: rgba(16, 18, 24, 0.85);
             backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(212, 175, 55, 0.25);
+            transition: all 0.3s ease;
         }
+
         .glass-card:hover {
             border-color: rgba(212, 175, 55, 0.65);
-            box-shadow: 0 8px 32px 0 rgba(212, 175, 55, 0.2);
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .rtl-mode {
+            text-align: right;
+        }
+
+        [dir="rtl"] .font-serif-title {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        [dir="rtl"] .tracking-widest {
+            letter-spacing: 0;
+        }
+
+        input,
+        textarea,
+        select {
+            color-scheme: dark;
+        }
+
+        ::selection {
+            background: #D4AF37;
+            color: #000;
         }
     </style>
 </head>
-<body class="selection:bg-gold-500 selection:text-black">
 
-    <!-- Header Navigation -->
-    <header class="fixed w-full z-50 transition-all duration-300 bg-dark-900/90 backdrop-blur-md border-b border-gold-500/20" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                
-                <!-- Logo -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-12 h-12 relative flex items-center justify-center">
-                        <svg viewBox="0 0 200 200" class="w-full h-full filter drop-shadow-md">
-                            <path d="M100 20 C110 35 125 35 135 25 C130 45 145 55 160 50 C145 65 155 80 170 85 C150 95 155 115 170 125 C150 130 145 150 155 165 C135 155 125 165 120 180 C105 165 95 165 80 180 C75 165 65 155 45 165 C55 150 50 130 30 125 C45 115 50 95 30 85 C45 80 55 65 40 50 C55 55 70 45 65 25 C75 35 90 35 100 20 Z" fill="none" stroke="#D4AF37" stroke-width="4" />
-                            <circle cx="100" cy="100" r="65" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="6,3" />
-                            <text x="100" y="122" font-family="'Cinzel', serif" font-size="62" font-weight="bold" fill="url(#goldGradHead)" text-anchor="middle">Y</text>
-                            <defs>
-                                <linearGradient id="goldGradHead" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#FFE898" />
-                                    <stop offset="50%" stop-color="#D4AF37" />
-                                    <stop offset="100%" stop-color="#856404" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-xl font-black tracking-widest text-white font-serif-title">YASSINE</span>
-                        <span class="text-[10px] tracking-widest text-gold-500 -mt-1 font-semibold uppercase">Events • Marrakech</span>
-                    </div>
-                </a>
+<body class="bg-dark-900">
 
-                <!-- Desktop Nav -->
-                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium">
-                    <a href="#about" data-i18n="nav_about" class="text-gray-300 hover:text-gold-500 transition-colors">À Propos</a>
-                    <a href="#services" data-i18n="nav_services" class="text-gray-300 hover:text-gold-500 transition-colors">Nos Services</a>
-                    <a href="#gallery" data-i18n="nav_gallery" class="text-gray-300 hover:text-gold-500 transition-colors">Réalisations</a>
-                    <a href="#contact" data-i18n="nav_contact" class="text-gray-300 hover:text-gold-500 transition-colors">Contact</a>
-                </nav>
+<!-- ========================================================= -->
+<!-- HEADER -->
+<!-- ========================================================= -->
 
-                <!-- Language Switcher & WhatsApp Button -->
-                <div class="hidden sm:flex items-center gap-4">
-                    <select id="langSelect" onchange="changeLanguage(this.value)" class="bg-dark-800 text-gold-400 border border-gold-500/30 text-xs rounded-full px-3 py-1.5 focus:outline-none cursor-pointer font-bold">
-                        <option value="fr" selected>Français 🇫🇷</option>
-                        <option value="ar">العربية 🇲🇦</option>
-                        <option value="en">English 🇬🇧</option>
-                        <option value="es">Español 🇪🇸</option>
-                    </select>
+<header
+    id="navbar"
+    class="fixed top-0 left-0 w-full z-50 bg-dark-900/90 backdrop-blur-md border-b border-gold-500/20"
+>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                    <a href="https://wa.me/212661691042?text=Bonjour,%20je%20souhaite%20me%20renseigner%20sur%20l'organisation%20d'un%20événement%20à%20Marrakech." target="_blank" class="gold-btn text-black font-bold px-5 py-2.5 rounded-full text-xs flex items-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-lg"></i>
-                        <span data-i18n="btn_whatsapp">Demander les Tarifs</span>
-                    </a>
+        <div class="flex items-center justify-between h-20">
+
+            <!-- LOGO -->
+            <a href="#top" class="flex items-center gap-3 group">
+
+                <div class="w-12 h-12 relative flex items-center justify-center">
+                    <img
+                        src="./logo.JPG"
+                        alt="Yassine Events Logo"
+                        class="w-full h-full object-contain"
+                    >
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <div class="lg:hidden flex items-center gap-3">
-                    <select id="langSelectMobile" onchange="changeLanguage(this.value)" class="bg-dark-800 text-gold-400 border border-gold-500/30 text-xs rounded-full px-2 py-1">
-                        <option value="fr" selected>FR</option>
-                        <option value="ar">AR</option>
-                        <option value="en">EN</option>
-                        <option value="es">ES</option>
-                    </select>
-                    <button id="mobileMenuBtn" class="text-gray-300 hover:text-gold-500 focus:outline-none p-2">
-                        <i class="fa-solid fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black tracking-widest text-white font-serif-title">
+                        YASSINE
+                    </span>
 
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-dark-800 border-b border-gold-500/20 px-4 pt-2 pb-6 space-y-3">
-            <a href="#about" data-i18n="nav_about" class="block text-gray-300 hover:text-gold-500 py-2">À Propos</a>
-            <a href="#services" data-i18n="nav_services" class="block text-gray-300 hover:text-gold-500 py-2">Nos Services</a>
-            <a href="#gallery" data-i18n="nav_gallery" class="block text-gray-300 hover:text-gold-500 py-2">Réalisations</a>
-            <a href="#contact" data-i18n="nav_contact" class="block text-gray-300 hover:text-gold-500 py-2">Contact</a>
-            <a href="https://wa.me/212661691042?text=Bonjour,%20je%20souhaite%20me%20renseigner%20sur%20vos%20services%20à%20Marrakech." target="_blank" class="block gold-btn text-black font-bold text-center py-3 rounded-xl mt-4">
-                <i class="fa-brands fa-whatsapp mr-2"></i> <span data-i18n="btn_whatsapp">Contactez sur WhatsApp</span>
+                    <span class="text-[10px] tracking-widest text-gold-500 -mt-1 font-semibold uppercase">
+                        Events • Marrakech
+                    </span>
+                </div>
+
             </a>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900">
-        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <!-- DESKTOP NAV -->
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium">
 
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            
-            <!-- Logo Crest -->
-            <div class="flex justify-center mb-6">
-                <div class="w-36 h-36 sm:w-44 sm:h-44 relative flex items-center justify-center">
-                
-    <img
-        src="./logo.JPG"
-        alt="Yassine Events Logo"
-        class="w-full h-full object-contain drop-shadow-2xl"
-                </div>
-            </div>
-
-            <!-- Marrakech Badge -->
-            <div class="inline-block p-1 mb-6 rounded-full bg-gradient-to-r from-gold-600 via-gold-400 to-gold-700 shadow-xl">
-                <div class="bg-dark-900 px-6 py-2 rounded-full border border-gold-500/30 flex items-center gap-2 justify-center">
-                    <i class="fa-solid fa-location-dot text-gold-400"></i>
-                    <span class="text-gold-400 text-xs sm:text-sm font-semibold tracking-wider uppercase" data-i18n="hero_location">Marrakech • Royaume du Maroc</span>
-                </div>
-            </div>
-
-            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 font-serif-title">
-                <span class="block tracking-widest">YASSINE EVENTS</span>
-                <span class="gold-gradient-text text-xl sm:text-3xl lg:text-4xl font-sans font-bold mt-3 block" data-i18n="hero_title">Nous transformons vos moments en souvenirs inoubliables</span>
-            </h1>
-
-            <p class="text-sm sm:text-lg text-gray-300 max-w-3xl mx-auto font-light leading-relaxed mb-8" data-i18n="hero_subtitle">
-                Planification d'événements d'exception, traiteur de prestige et décoration sur-mesure de A à Z à Marrakech.
-            </p>
-
-            <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/30 text-gold-300 px-4 py-2 rounded-full text-xs mb-8">
-                <i class="fa-solid fa-circle-info"></i>
-                <span data-i18n="price_notice">Remarque : Les tarifs et devis personnalisés sont communiqués exclusivement sur WhatsApp.</span>
-            </div>
-
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-                <a href="https://wa.me/212661691042?text=Bonjour,%20je%20souhaite%20obtenir%20un%20devis%20pour%20un%20événement%20à%20Marrakech." target="_blank" class="gold-btn text-black font-bold text-base px-8 py-4 rounded-full w-full sm:w-auto shadow-lg shadow-gold-500/20 flex items-center justify-center gap-3">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i>
-                    <span data-i18n="btn_ask_price">Demander les Tarifs sur WhatsApp</span>
+                <a href="#about"
+                   data-i18n="nav_about"
+                   class="text-gray-300 hover:text-gold-500 transition-colors">
+                    À Propos
                 </a>
-                <a href="#gallery" class="border-2 border-gold-500/60 hover:border-gold-400 text-gold-400 hover:text-white px-8 py-4 rounded-full font-bold text-base w-full sm:w-auto transition-all duration-300 bg-dark-800/50 hover:bg-gold-500/10 flex items-center justify-center gap-2">
-                    <span data-i18n="btn_gallery">Découvrir Nos Réalisations</span> <i class="fa-solid fa-arrow-right"></i>
+
+                <a href="#services"
+                   data-i18n="nav_services"
+                   class="text-gray-300 hover:text-gold-500 transition-colors">
+                    Nos Services
                 </a>
+
+                <a href="#gallery"
+                   data-i18n="nav_gallery"
+                   class="text-gray-300 hover:text-gold-500 transition-colors">
+                    Réalisations
+                </a>
+
+                <a href="#contact"
+                   data-i18n="nav_contact"
+                   class="text-gray-300 hover:text-gold-500 transition-colors">
+                    Contact
+                </a>
+
+            </nav>
+
+            <!-- DESKTOP ACTIONS -->
+            <div class="hidden sm:flex items-center gap-4">
+
+                <select
+                    id="langSelect"
+                    onchange="changeLanguage(this.value)"
+                    class="bg-dark-800 text-gold-400 border border-gold-500/30 text-xs rounded-full px-3 py-1.5 focus:outline-none cursor-pointer font-bold"
+                >
+                    <option value="fr">Français 🇫🇷</option>
+                    <option value="ar">العربية 🇲🇦</option>
+                    <option value="en">English 🇬🇧</option>
+                    <option value="es">Español 🇪🇸</option>
+                </select>
+
+                <a
+                    href="https://wa.me/212661691042?text=Bonjour%2C%20je%20souhaite%20me%20renseigner%20sur%20l%27organisation%20d%27un%20%C3%A9v%C3%A9nement%20%C3%A0%20Marrakech."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="gold-btn text-black font-bold px-5 py-2.5 rounded-full text-xs flex items-center gap-2"
+                >
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span data-i18n="btn_whatsapp">
+                        Demander les Tarifs
+                    </span>
+                </a>
+
             </div>
 
-            <!-- Stats Bar -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-10 border-t border-gold-500/20">
-                <div class="text-center">
-                    <div class="text-3xl lg:text-4xl font-extrabold gold-gradient-text font-serif-title">+300</div>
-                    <div class="text-xs text-gray-400 mt-1" data-i18n="stat_1">Événements d'Exception à Marrakech</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl lg:text-4xl font-extrabold gold-gradient-text font-serif-title">100%</div>
-                    <div class="text-xs text-gray-400 mt-1" data-i18n="stat_2">Raffinement & Attention au Détail</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl lg:text-4xl font-extrabold gold-gradient-text font-serif-title">+10</div>
-                    <div class="text-xs text-gray-400 mt-1" data-i18n="stat_3">Ans d'Expertise Événementielle</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl lg:text-4xl font-extrabold gold-gradient-text font-serif-title">VIP</div>
-                    <div class="text-xs text-gray-400 mt-1" data-i18n="stat_4">Traiteur & Art de la Table Fassi</div>
-                </div>
+            <!-- MOBILE -->
+            <div class="lg:hidden flex items-center gap-3">
+
+                <select
+                    id="langSelectMobile"
+                    onchange="changeLanguage(this.value)"
+                    class="bg-dark-800 text-gold-400 border border-gold-500/30 text-xs rounded-full px-2 py-1"
+                >
+                    <option value="fr">FR</option>
+                    <option value="ar">AR</option>
+                    <option value="en">EN</option>
+                    <option value="es">ES</option>
+                </select>
+
+                <button
+                    id="mobileMenuBtn"
+                    type="button"
+                    aria-label="Menu"
+                    class="text-gray-300 hover:text-gold-500 focus:outline-none p-2"
+                >
+                    <i id="menuIcon" class="fa-solid fa-bars text-2xl"></i>
+                </button>
+
             </div>
+
         </div>
-    </section>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-dark-800 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                
-                <div class="relative flex justify-center">
-                    <div class="relative w-80 h-80 sm:w-96 sm:h-96 rounded-3xl glass-card p-8 flex flex-col items-center justify-center text-center border-2 border-gold-500/40 shadow-2xl">
-                        <div class="w-28 h-28 relative mb-2">
-                            <svg viewBox="0 0 200 200" class="w-full h-full filter drop-shadow-lg">
-                                <path d="M100 20 C110 35 125 35 135 25 C130 45 145 55 160 50 C145 65 155 80 170 85 C150 95 155 115 170 125 C150 130 145 150 155 165 C135 155 125 165 120 180 C105 165 95 165 80 180 C75 165 65 155 45 165 C55 150 50 130 30 125 C45 115 50 95 30 85 C45 80 55 65 40 50 C55 55 70 45 65 25 C75 35 90 35 100 20 Z" fill="none" stroke="#D4AF37" stroke-width="4" />
-                                <circle cx="100" cy="100" r="65" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="6,3" />
-                                <text x="100" y="122" font-family="'Cinzel', serif" font-size="62" font-weight="bold" fill="url(#aboutGoldGrad)" text-anchor="middle">Y</text>
-                                <defs>
-                                    <linearGradient id="aboutGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#FFE898" />
-                                        <stop offset="50%" stop-color="#D4AF37" />
-                                        <stop offset="100%" stop-color="#856404" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white tracking-widest font-serif-title">YASSINE EVENTS</h3>
-                        <p class="text-gold-400 text-xs mt-1 uppercase font-semibold">Marrakech • Maroc</p>
-                        
-                        <div class="mt-6 pt-4 border-t border-gold-500/20 text-xs text-gray-400">
-                            <i class="fa-solid fa-crown text-gold-400 mr-1"></i> L'art de recevoir avec prestige
-                        </div>
+    <!-- MOBILE MENU -->
+    <div
+        id="mobileMenu"
+        class="hidden lg:hidden bg-dark-800 border-b border-gold-500/20 px-4 pt-2 pb-6 space-y-3"
+    >
+
+        <a
+            href="#about"
+            data-i18n="nav_about"
+            class="block text-gray-300 hover:text-gold-500 py-2"
+        >
+            À Propos
+        </a>
+
+        <a
+            href="#services"
+            data-i18n="nav_services"
+            class="block text-gray-300 hover:text-gold-500 py-2"
+        >
+            Nos Services
+        </a>
+
+        <a
+            href="#gallery"
+            data-i18n="nav_gallery"
+            class="block text-gray-300 hover:text-gold-500 py-2"
+        >
+            Réalisations
+        </a>
+
+        <a
+            href="#contact"
+            data-i18n="nav_contact"
+            class="block text-gray-300 hover:text-gold-500 py-2"
+        >
+            Contact
+        </a>
+
+        <a
+            href="https://wa.me/212661691042?text=Bonjour%2C%20je%20souhaite%20me%20renseigner%20sur%20vos%20services%20%C3%A0%20Marrakech."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block gold-btn text-black font-bold text-center py-3 rounded-xl mt-4"
+        >
+            <i class="fa-brands fa-whatsapp mr-2"></i>
+            <span data-i18n="btn_whatsapp">
+                Demander les Tarifs
+            </span>
+        </a>
+
+    </div>
+</header>
+
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section
+    id="top"
+    class="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900"
+>
+
+    <div
+        class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"
+    ></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+
+        <!-- LOGO -->
+        <div class="flex justify-center mb-6">
+
+            <div class="w-36 h-36 sm:w-44 sm:h-44 relative flex items-center justify-center">
+
+                <img
+                    src="./logo.JPG"
+                    alt="Yassine Events Logo"
+                    class="w-full h-full object-contain drop-shadow-2xl"
+                >
+
+            </div>
+
+        </div>
+
+        <!-- LOCATION -->
+        <div class="inline-block p-1 mb-6 rounded-full bg-gradient-to-r from-gold-600 via-gold-400 to-gold-700 shadow-xl">
+
+            <div class="bg-dark-900 px-6 py-2 rounded-full border border-gold-500/30 flex items-center gap-2 justify-center">
+
+                <i class="fa-solid fa-location-dot text-gold-400"></i>
+
+                <span
+                    class="text-gold-400 text-xs sm:text-sm font-semibold tracking-wider uppercase"
+                    data-i18n="hero_location"
+                >
+                    Marrakech • Royaume du Maroc
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- TITLE -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 font-serif-title">
+
+            <span class="block tracking-widest">
+                YASSINE EVENTS
+            </span>
+
+            <span
+                class="gold-gradient-text text-xl sm:text-3xl lg:text-4xl font-sans font-bold mt-3 block"
+                data-i18n="hero_title"
+            >
+                Nous transformons vos moments en souvenirs inoubliables
+            </span>
+
+        </h1>
+
+        <!-- SUBTITLE -->
+        <p
+            class="text-sm sm:text-lg text-gray-300 max-w-3xl mx-auto font-light leading-relaxed mb-8"
+            data-i18n="hero_subtitle"
+        >
+            Planification d'événements d'exception, traiteur de prestige et décoration sur-mesure de A à Z à Marrakech.
+        </p>
+
+        <!-- PRICE NOTICE -->
+        <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/30 text-gold-300 px-4 py-2 rounded-full text-xs mb-8">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span data-i18n="price_notice">
+                Remarque : Les tarifs et devis personnalisés sont communiqués exclusivement sur WhatsApp.
+            </span>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+
+            <a
+                href="https://wa.me/212661691042?text=Bonjour%2C%20je%20souhaite%20obtenir%20un%20devis%20pour%20un%20%C3%A9v%C3%A9nement%20%C3%A0%20Marrakech."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="gold-btn text-black font-bold text-base px-8 py-4 rounded-full w-full sm:w-auto shadow-lg shadow-gold-500/20 flex items-center justify-center gap-3"
+            >
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+
+                <span data-i18n="btn_ask_price">
+                    Demander les Tarifs sur WhatsApp
+                </span>
+            </a>
+
+            <a
+                href="#gallery"
+                class="border-2 border-gold-500/60 hover:border-gold-400 text-gold-400 hover:text-white px-8 py-4 rounded-full font-bold text-base w-full sm:w-auto transition-all duration-300 bg-dark-800/50 hover:bg-gold-500/10 flex items-center justify-center gap-2"
+            >
+                <span data-i18n="btn_gallery">
+                    Découvrir Nos Réalisations
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!-- STATS -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-10 border-t border-gold-500/20">
+
+            <div class="text-center">
+                <div class="text-3xl lg:text-4xl font-extrabold gold-gradient-text font-serif-title">
+                    +300
+                </div>
+
+                <div
+                    class="text-xs text-gray-400 mt-1"
+                    data-i18n="stat_1"
+                >
+                    Événements d'Exception à Marrakech
+                </div>
+            </div>
+
+            <div class="text-center">
+                <div class="text-3xl lg:text-4xl font-extrabold gold-gradient-text font-serif-title">
+                    100%
+                </div>
+
+                <div
+                    class="text-xs text-gray-400 mt-1"
+                    data-i18n="stat_2"
+                >
+                    Raffinement & Attention au Détail
+                </div>
+            </div>
+
+            <div class="text-center">
+                <div class="text-3xl lg:text-4xl font-extrabold gold-gradient-text font-serif-title">
+                    +10
+                </div>
+
+                <div
+                    class="text-xs text-gray-400 mt-1"
+                    data-i18n="stat_3"
+                >
+                    Ans d'Expertise Événementielle
+                </div>
+            </div>
+
+            <div class="text-center">
+                <div class="text-3xl lg:text-4xl font-extrabold gold-gradient-text font-serif-title">
+                    VIP
+                </div>
+
+                <div
+                    class="text-xs text-gray-400 mt-1"
+                    data-i18n="stat_4"
+                >
+                    Traiteur & Art de la Table Fassi
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- ABOUT -->
+<!-- ========================================================= -->
+
+<section id="about" class="py-20 bg-dark-800 relative">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- BRAND CARD -->
+            <div class="relative flex justify-center">
+
+                <div class="relative w-80 h-80 sm:w-96 sm:h-96 rounded-3xl glass-card p-8 flex flex-col items-center justify-center text-center border-2 border-gold-500/40 shadow-2xl">
+
+                    <div class="w-28 h-28 relative mb-2">
+
+                        <img
+                            src="./logo.JPG"
+                            alt="Yassine Events"
+                            class="w-full h-full object-contain"
+                        >
+
                     </div>
+
+                    <h3 class="text-2xl font-bold text-white tracking-widest font-serif-title">
+                        YASSINE EVENTS
+                    </h3>
+
+                    <p class="text-gold-400 text-xs mt-1 uppercase font-semibold">
+                        Marrakech • Maroc
+                    </p>
+
+                    <div class="mt-6 pt-4 border-t border-gold-500/20 text-xs text-gray-400">
+
+                        <i class="fa-solid fa-crown text-gold-400 mr-1"></i>
+
+                        <span data-i18n="about_motto">
+                            L'art de recevoir avec prestige
+                        </span>
+
+                    </div>
+
                 </div>
+
+            </div>
+
+            <!-- ABOUT TEXT -->
+            <div class="space-y-6">
+
+                <div
+                    class="inline-block px-4 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-wider"
+                    data-i18n="about_tag"
+                >
+                    À Propos de Yassine Events
+                </div>
+
+                <h2
+                    class="text-3xl sm:text-4xl font-bold text-white font-serif-title"
+                    data-i18n="about_title"
+                >
+                    L'hospitalité marocaine alliée au luxe moderne
+                </h2>
+
+                <p
+                    class="text-gray-300 leading-relaxed text-base"
+                    data-i18n="about_desc1"
+                >
+                    Basée au cœur de Marrakech, l'agence YASSINE EVENTS est spécialisée dans l'organisation clé en main de mariages, réceptions privées et événements haut de gamme.
+                </p>
+
+                <p
+                    class="text-gray-400 leading-relaxed text-sm"
+                    data-i18n="about_desc2"
+                >
+                    Que vous rêviez d'un mariage traditionnel marocain dans un Riad féerique, d'une soirée de fiançailles élégante ou d'un banquet d'anniversaire raffiné, notre équipe prend en charge l'ensemble de la scénographie et du service.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+
+                    <div class="flex items-start space-x-3">
+
+                        <div class="p-2 rounded-lg bg-gold-500/10 text-gold-400 mt-1">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <div>
+
+                            <h4
+                                class="font-bold text-white text-sm"
+                                data-i18n="feat_1_title"
+                            >
+                                Coordination Complète à Marrakech
+                            </h4>
+
+                            <p
+                                class="text-xs text-gray-400"
+                                data-i18n="feat_1_sub"
+                            >
+                                Supervision méticuleuse le jour J
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+
+                        <div class="p-2 rounded-lg bg-gold-500/10 text-gold-400 mt-1">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <div>
+
+                            <h4
+                                class="font-bold text-white text-sm"
+                                data-i18n="feat_2_title"
+                            >
+                                Équipements & Vaisselle VIP
+                            </h4>
+
+                            <p
+                                class="text-xs text-gray-400"
+                                data-i18n="feat_2_sub"
+                            >
+                                Mobilier et vaisselle dorée haut de gamme
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SERVICES -->
+<!-- ========================================================= -->
+
+<section id="services" class="py-20 bg-dark-900 relative">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-16">
+
+            <span
+                class="text-gold-400 text-xs font-semibold tracking-widest uppercase"
+                data-i18n="serv_tag"
+            >
+                Nos Services Exclusifs
+            </span>
+
+            <h2
+                class="text-3xl sm:text-5xl font-extrabold text-white font-serif-title mt-2"
+                data-i18n="serv_title"
+            >
+                Une prestation sur-mesure pour chaque événement
+            </h2>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- SERVICE 1 -->
+            <div class="glass-card rounded-2xl p-8">
+
+                <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+
+                <h3
+                    class="text-xl font-bold text-white mb-2"
+                    data-i18n="s1_title"
+                >
+                    1. Organisation & Planning Global
+                </h3>
+
+                <p class="text-gold-400 text-xs font-semibold uppercase mb-4">
+                    De A à Z
+                </p>
+
+                <p
+                    class="text-gray-300 text-xs leading-relaxed"
+                    data-i18n="s1_desc"
+                >
+                    Gestion intégrale de votre événement à Marrakech pour vivre des moments uniques sans aucun stress.
+                </p>
+
+            </div>
+
+            <!-- SERVICE 2 -->
+            <div class="glass-card rounded-2xl p-8">
+
+                <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+
+                <h3
+                    class="text-xl font-bold text-white mb-2"
+                    data-i18n="s2_title"
+                >
+                    2. Décoration & Scénographie
+                </h3>
+
+                <p class="text-gold-400 text-xs font-semibold uppercase mb-4">
+                    Event Decor & Styling
+                </p>
+
+                <p
+                    class="text-gray-300 text-xs leading-relaxed"
+                    data-i18n="s2_desc"
+                >
+                    Scène de mariés personnalisée, lanternes artisanales en cuivre et décors floraux majestueux.
+                </p>
+
+            </div>
+
+            <!-- SERVICE 3 -->
+            <div class="glass-card rounded-2xl p-8">
+
+                <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+
+                <h3
+                    class="text-xl font-bold text-white mb-2"
+                    data-i18n="s3_title"
+                >
+                    3. Service Traiteur
+                </h3>
+
+                <p class="text-gold-400 text-xs font-semibold uppercase mb-4">
+                    Traiteur d'Excellence
+                </p>
+
+                <p
+                    class="text-gray-300 text-xs leading-relaxed"
+                    data-i18n="s3_desc"
+                >
+                    Gastronomie marocaine raffinée et buffets internationaux présentés dans de la vaisselle dorée VIP.
+                </p>
+
+            </div>
+
+            <!-- SERVICE 4 -->
+            <div class="glass-card rounded-2xl p-8">
+
+                <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
+                    <i class="fa-solid fa-couch"></i>
+                </div>
+
+                <h3
+                    class="text-xl font-bold text-white mb-2"
+                    data-i18n="s4_title"
+                >
+                    4. Location de Matériel & Vaisselle
+                </h3>
+
+                <p class="text-gold-400 text-xs font-semibold uppercase mb-4">
+                    Equipment Rental
+                </p>
+
+                <p
+                    class="text-gray-300 text-xs leading-relaxed"
+                    data-i18n="s4_desc"
+                >
+                    Location de tables rondes, chaises VIP, vaisselle avec bordures dorées et lustres marocains.
+                </p>
+
+            </div>
+
+            <!-- SERVICE 5 -->
+            <div class="glass-card rounded-2xl p-8 md:col-span-2">
+
+                <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+
+                <h3
+                    class="text-xl font-bold text-white mb-2"
+                    data-i18n="s5_title"
+                >
+                    5. Animation & Shows Musique
+                </h3>
+
+                <p class="text-gold-400 text-xs font-semibold uppercase mb-4">
+                    Entertainment & DJ
+                </p>
+
+                <p
+                    class="text-gray-300 text-xs leading-relaxed"
+                    data-i18n="s5_desc"
+                >
+                    Orchestres en direct, DJ professionnels, troupes folkloriques marocaines et spectacles envoûtants.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- GALLERY -->
+<!-- ========================================================= -->
+
+<section
+    id="gallery"
+    class="py-20 bg-dark-800 border-t border-gold-500/20"
+>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-12">
+
+            <span
+                class="text-gold-400 text-xs font-semibold tracking-wider uppercase"
+                data-i18n="gal_tag"
+            >
+                Galerie Photos
+            </span>
+
+            <h2
+                class="text-3xl sm:text-5xl font-extrabold text-white font-serif-title mt-2"
+                data-i18n="gal_title"
+            >
+                Aperçu de Nos Réalisations à Marrakech
+            </h2>
+
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- GALLERY 1 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+
+                <div class="h-72 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80"
+                        alt="Décoration événementielle"
+                        loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    >
+
+                </div>
+
+                <div class="p-4">
+
+                    <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">
+                        Scène des Mariés
+                    </span>
+
+                    <h4
+                        class="text-sm font-bold text-white mt-2"
+                        data-i18n="g1_title"
+                    >
+                        Espace Mariés lumineux avec arche florale et monogramme doré
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <!-- GALLERY 2 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+
+                <div class="h-72 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80"
+                        alt="Vaisselle événementielle"
+                        loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    >
+
+                </div>
+
+                <div class="p-4">
+
+                    <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">
+                        Vaisselle VIP
+                    </span>
+
+                    <h4
+                        class="text-sm font-bold text-white mt-2"
+                        data-i18n="g2_title"
+                    >
+                        Art de la table raffiné avec assiettes à bordures dorées
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <!-- GALLERY 3 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+
+                <div class="h-72 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80"
+                        alt="Lanternes marocaines"
+                        loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    >
+
+                </div>
+
+                <div class="p-4">
+
+                    <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">
+                        Lanternes
+                    </span>
+
+                    <h4
+                        class="text-sm font-bold text-white mt-2"
+                        data-i18n="g3_title"
+                    >
+                        Lanternes marocaines suspendues pour une ambiance élégante
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <!-- GALLERY 4 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+
+                <div class="h-72 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1545232979-fbf592320755?auto=format&fit=crop&w=800&q=80"
+                        alt="Salon événementiel"
+                        loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    >
+
+                </div>
+
+                <div class="p-4">
+
+                    <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">
+                        Salon Traditionnel
+                    </span>
+
+                    <h4
+                        class="text-sm font-bold text-white mt-2"
+                        data-i18n="g4_title"
+                    >
+                        Espace traditionnel pour cérémonie marocaine
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <!-- GALLERY 5 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+
+                <div class="h-72 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=800&q=80"
+                        alt="Centre de table"
+                        loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    >
+
+                </div>
+
+                <div class="p-4">
+
+                    <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">
+                        Centres de Table
+                    </span>
+
+                    <h4
+                        class="text-sm font-bold text-white mt-2"
+                        data-i18n="g5_title"
+                    >
+                        Candélabres dorés et décoration florale
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <!-- GALLERY 6 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+
+                <div class="h-72 overflow-hidden">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80"
+                        alt="Banquet Marrakech"
+                        loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    >
+
+                </div>
+
+                <div class="p-4">
+
+                    <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">
+                        Riads & Palais
+                    </span>
+
+                    <h4
+                        class="text-sm font-bold text-white mt-2"
+                        data-i18n="g6_title"
+                    >
+                        Aménagement de banquets dans les plus beaux Riads de Marrakech
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- CTA -->
+<!-- ========================================================= -->
+
+<section class="py-16 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600 text-black">
+
+    <div class="max-w-5xl mx-auto px-4 text-center">
+
+        <h2
+            class="text-2xl sm:text-4xl font-extrabold font-serif-title mb-4"
+            data-i18n="cta_heading"
+        >
+            Vous planifiez un événement à Marrakech ?
+        </h2>
+
+        <p
+            class="text-sm sm:text-base font-semibold mb-8 max-w-2xl mx-auto"
+            data-i18n="cta_text"
+        >
+            Contactez notre équipe directement sur WhatsApp pour obtenir un devis personnalisé.
+        </p>
+
+        <a
+            href="https://wa.me/212661691042?text=Bonjour%2C%20je%20souhaite%20obtenir%20un%20devis%20pour%20un%20%C3%A9v%C3%A9nement%20%C3%A0%20Marrakech."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-black hover:bg-dark-800 text-gold-400 font-bold px-8 py-4 rounded-full text-base transition-all shadow-2xl inline-flex items-center gap-3"
+        >
+
+            <i class="fa-brands fa-whatsapp text-2xl text-green-400"></i>
+
+            <span data-i18n="cta_button">
+                Discuter sur WhatsApp (+212 661-691042)
+            </span>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- CONTACT -->
+<!-- ========================================================= -->
+
+<section id="contact" class="py-20 bg-dark-900">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+            <!-- CONTACT INFO -->
+            <div>
+
+                <span
+                    class="text-gold-400 text-xs font-semibold tracking-wider uppercase"
+                    data-i18n="contact_tag"
+                >
+                    Siège & Coordonnées
+                </span>
+
+                <h2
+                    class="text-3xl sm:text-4xl font-extrabold text-white font-serif-title mt-2 mb-6"
+                    data-i18n="contact_title"
+                >
+                    Contactez YASSINE EVENTS
+                </h2>
 
                 <div class="space-y-6">
-                    <div class="inline-block px-4 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-wider" data-i18n="about_tag">
-                        À Propos de Yassine Events
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white font-serif-title" data-i18n="about_title">
-                        L'hospitalité marocaine alliée au luxe moderne
-                    </h2>
-                    <p class="text-gray-300 leading-relaxed text-base" data-i18n="about_desc1">
-                        Basée au cœur de Marrakech, l'agence <strong class="gold-gradient-text">YASSINE EVENTS</strong> est spécialisée dans l'organisation clé en main de mariages princier, réceptions privées et événements haut de gamme.
-                    </p>
-                    <p class="text-gray-400 leading-relaxed text-sm" data-i18n="about_desc2">
-                        Que vous rêviez d'un mariage traditionnel marocain dans un Riad féerique, d'une soirée de fiançailles élégante ou d'un banquet d'anniversaire raffiné, notre équipe prend en charge l'ensemble de la scénographie et du service.
-                    </p>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                        <div class="flex items-start space-x-3">
-                            <div class="p-2 rounded-lg bg-gold-500/10 text-gold-400 mt-1"><i class="fa-solid fa-check"></i></div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm" data-i18n="feat_1_title">Coordination Complète à Marrakech</h4>
-                                <p class="text-xs text-gray-400" data-i18n="feat_1_sub">Supervision méticuleuse le jour J</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="p-2 rounded-lg bg-gold-500/10 text-gold-400 mt-1"><i class="fa-solid fa-check"></i></div>
-                            <div>
-                                <h4 class="font-bold text-white text-sm" data-i18n="feat_2_title">Équipements & Vaisselle VIP</h4>
-                                <p class="text-xs text-gray-400" data-i18n="feat_2_sub">Mobilier et vaisselle dorée haut de gamme</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <!-- LOCATION -->
+                    <div class="flex items-center gap-4">
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-dark-900 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-gold-400 text-xs font-semibold tracking-widest uppercase" data-i18n="serv_tag">Nos Services Exclusifs</span>
-                <h2 class="text-3xl sm:text-5xl font-extrabold text-white font-serif-title mt-2" data-i18n="serv_title">Une prestation sur-mesure pour chaque événement</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="glass-card rounded-2xl p-8 relative overflow-hidden group transition-all duration-300">
-                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
-                        <i class="fa-solid fa-clipboard-check"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="s1_title">1. Organisation & Planning Global</h3>
-                    <p class="text-gold-400 text-xs font-semibold uppercase mb-4">De A à Z</p>
-                    <p class="text-gray-300 text-xs leading-relaxed mb-4" data-i18n="s1_desc">Gestion intégrale de votre événement à Marrakech pour vivre des moments uniques sans aucun stress.</p>
-                </div>
-
-                <div class="glass-card rounded-2xl p-8 relative overflow-hidden group transition-all duration-300">
-                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="s2_title">2. Décoration & Scénographie</h3>
-                    <p class="text-gold-400 text-xs font-semibold uppercase mb-4">Event Decor & Styling</p>
-                    <p class="text-gray-300 text-xs leading-relaxed mb-4" data-i18n="s2_desc">Scène de mariés personnalisée (N&M), lanternes artisanales en cuivre et décors floraux majestueux.</p>
-                </div>
-
-                <div class="glass-card rounded-2xl p-8 relative overflow-hidden group transition-all duration-300">
-                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
-                        <i class="fa-solid fa-utensils"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="s3_title">3. Service Traiteur (Catering)</h3>
-                    <p class="text-gold-400 text-xs font-semibold uppercase mb-4">Traiteur d'Excellence</p>
-                    <p class="text-gray-300 text-xs leading-relaxed mb-4" data-i18n="s3_desc">Gastronomie marocaine raffinée et buffets internationaux présentés dans de la vaisselle dorée VIP.</p>
-                </div>
-
-                <div class="glass-card rounded-2xl p-8 relative overflow-hidden group transition-all duration-300">
-                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="s4_title">4. Location de Matériel & Vaisselle</h3>
-                    <p class="text-gold-400 text-xs font-semibold uppercase mb-4">Equipment & Vaisselle Rental</p>
-                    <p class="text-gray-300 text-xs leading-relaxed mb-4" data-i18n="s4_desc">Location de tables rondes, chaises VIP, vaisselle avec bordures dorées et lustres marocains.</p>
-                </div>
-
-                <div class="glass-card rounded-2xl p-8 relative overflow-hidden group transition-all duration-300 lg:col-span-2">
-                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-6">
-                        <i class="fa-solid fa-music"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="s5_title">5. Animation & Shows Musique</h3>
-                    <p class="text-gold-400 text-xs font-semibold uppercase mb-4">Entertainment & DJ</p>
-                    <p class="text-gray-300 text-xs leading-relaxed mb-4" data-i18n="s5_desc">Orchestres en direct, DJ professionnels, troupes folkloriques marocaines et spectacles envoûtants.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-dark-800 border-t border-gold-500/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <span class="text-gold-400 text-xs font-semibold tracking-wider uppercase" data-i18n="gal_tag">Galerie Photos</span>
-                <h2 class="text-3xl sm:text-5xl font-extrabold text-white font-serif-title mt-2" data-i18n="gal_title">Aperçu de Nos Réalisations à Marrakech</h2>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <div class="glass-card rounded-2xl overflow-hidden group relative">
-                    <div class="h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="[ديكور مسرح العروسين]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">Scène des Mariés</span>
-                        <h4 class="text-sm font-bold text-white mt-2" data-i18n="g1_title">Espace Mariés lumineux avec arche florale et monogramme doré (N&M)</h4>
-                    </div>
-                </div>
-
-                <div class="glass-card rounded-2xl overflow-hidden group relative">
-                    <div class="h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80" alt="[أطقم أواني فاخرة مذهبة]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">Vaisselle VIP</span>
-                        <h4 class="text-sm font-bold text-white mt-2" data-i18n="g2_title">Art de la table raffiné avec assiettes à bordures dorées et couvercle en brocard</h4>
-                    </div>
-                </div>
-
-                <div class="glass-card rounded-2xl overflow-hidden group relative">
-                    <div class="h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="[فوانيس نحاسية معلقة]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">Lanternes Artisanales</span>
-                        <h4 class="text-sm font-bold text-white mt-2" data-i18n="g3_title">Lanternes marocaines suspendues en cuivre sculpté à la main</h4>
-                    </div>
-                </div>
-
-                <div class="glass-card rounded-2xl overflow-hidden group relative">
-                    <div class="h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1545232979-fbf592320755?auto=format&fit=crop&w=800&q=80" alt="[جلسة تقليدية مغربية]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">Salon Traditionnel</span>
-                        <h4 class="text-sm font-bold text-white mt-2" data-i18n="g4_title">Espace traditionnel pour cérémonie de Henné avec tajines en verre vert</h4>
-                    </div>
-                </div>
-
-                <div class="glass-card rounded-2xl overflow-hidden group relative">
-                    <div class="h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=800&q=80" alt="[شمعدانات ذهبية فاخرة]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">Centres de Table</span>
-                        <h4 class="text-sm font-bold text-white mt-2" data-i18n="g5_title">Candélabres dorés hauts et bougies torsadées pour dîners d'exception</h4>
-                    </div>
-                </div>
-
-                <div class="glass-card rounded-2xl overflow-hidden group relative">
-                    <div class="h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80" alt="[تنظيم مأدبة بالرياض]" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-[10px] bg-gold-500 text-black px-2 py-0.5 rounded font-bold uppercase">Riads & Palais</span>
-                        <h4 class="text-sm font-bold text-white mt-2" data-i18n="g6_title">Aménagement de banquets dans les plus beaux Riads et Salles de Marrakech</h4>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-16 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600 text-black relative">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <h2 class="text-2xl sm:text-4xl font-extrabold font-serif-title mb-4" data-i18n="cta_heading">Vous planifiez un événement à Marrakech ?</h2>
-            <p class="text-sm sm:text-base font-semibold mb-8 max-w-2xl mx-auto" data-i18n="cta_text">
-                Contactez notre équipe directement sur WhatsApp pour obtenir un devis personnalisé et réserver la date de votre célébration.
-            </p>
-            <a href="https://wa.me/212661691042?text=Bonjour,%20je%20souhaite%20obtenir%20un%20devis%20pour%20un%20événement%20à%20Marrakech." target="_blank" class="bg-black hover:bg-dark-800 text-gold-400 font-bold px-8 py-4 rounded-full text-base transition-all shadow-2xl inline-flex items-center gap-3">
-                <i class="fa-brands fa-whatsapp text-2xl text-green-400"></i>
-                <span data-i18n="cta_button">Discuter sur WhatsApp (+212 661-691042)</span>
-            </a>
-        </div>
-    </section>
-
-    <!-- Contact & Socials -->
-    <section id="contact" class="py-20 bg-dark-900 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                
-                <div>
-                    <span class="text-gold-400 text-xs font-semibold tracking-wider uppercase" data-i18n="contact_tag">Siège & Coordonnées</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-serif-title mt-2 mb-6" data-i18n="contact_title">Contactez YASSINE EVENTS</h2>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                                <span class="text-xs text-gray-400 block" data-i18n="c_loc_label">Localisation</span>
-                                <span class="text-white font-bold" data-i18n="c_loc_val">Marrakech - Royaume du Maroc</span>
-                            </div>
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
                         </div>
 
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                            <div>
-                                <span class="text-xs text-gray-400 block" data-i18n="c_phone_label">Téléphone & WhatsApp Direct</span>
-                                <a href="https://wa.me/212661691042" target="_blank" class="text-gold-400 font-bold text-lg hover:underline dir-ltr inline-block">+212 661-691042</a>
-                            </div>
+                        <div>
+
+                            <span
+                                class="text-xs text-gray-400 block"
+                                data-i18n="c_loc_label"
+                            >
+                                Localisation
+                            </span>
+
+                            <span
+                                class="text-white font-bold"
+                                data-i18n="c_loc_val"
+                            >
+                                Marrakech - Royaume du Maroc
+                            </span>
+
                         </div>
 
-                        <div class="p-4 rounded-2xl bg-dark-800 border border-gold-500/20 text-xs text-gray-300 flex items-center gap-3">
-                            <i class="fa-solid fa-tags text-gold-400 text-lg"></i>
-                            <span data-i18n="c_price_note">Remarque : Les détails tarifaires et devis personnalisés sont donnés uniquement sur WhatsApp.</span>
-                        </div>
                     </div>
 
-                    <div class="mt-10 pt-8 border-t border-gold-500/20">
-                        <h4 class="text-sm font-bold text-white mb-4" data-i18n="social_title">Suivez nos réalisations sur les réseaux sociaux :</h4>
-                        <div class="flex flex-wrap gap-4">
-                            <a href="https://www.instagram.com/yassine_events" target="_blank" class="flex items-center gap-2 bg-dark-800 border border-gold-500/30 px-5 py-3 rounded-xl text-gold-400 hover:bg-gold-500 hover:text-black transition-all text-xs font-bold">
-                                <i class="fa-brands fa-instagram text-lg"></i>
-                                <span>Instagram (@yassine_events)</span>
+                    <!-- WHATSAPP -->
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xl">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+
+                        <div>
+
+                            <span
+                                class="text-xs text-gray-400 block"
+                                data-i18n="c_phone_label"
+                            >
+                                Téléphone & WhatsApp Direct
+                            </span>
+
+                            <a
+                                href="https://wa.me/212661691042"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-gold-400 font-bold text-lg hover:underline"
+                                dir="ltr"
+                            >
+                                +212 661-691042
                             </a>
-                            <a href="https://www.tiktok.com/@yassine_events?_r=1&_t=ZS-98gJ3HmlM08" target="_blank" class="flex items-center gap-2 bg-dark-800 border border-gold-500/30 px-5 py-3 rounded-xl text-gold-400 hover:bg-gold-500 hover:text-black transition-all text-xs font-bold">
-                                <i class="fa-brands fa-tiktok text-lg"></i>
-                                <span>TikTok (@yassine_events)</span>
-                            </a>
+
                         </div>
+
                     </div>
+
+                    <!-- PRICE NOTE -->
+                    <div class="p-4 rounded-2xl bg-dark-800 border border-gold-500/20 text-xs text-gray-300 flex items-center gap-3">
+
+                        <i class="fa-solid fa-tags text-gold-400 text-lg"></i>
+
+                        <span data-i18n="c_price_note">
+                            Les détails tarifaires sont communiqués uniquement sur WhatsApp.
+                        </span>
+
+                    </div>
+
                 </div>
 
-                <div class="glass-card p-8 rounded-3xl border border-gold-500/30">
-                    <h3 class="text-xl font-bold text-white mb-2" data-i18n="form_title">Formulaire de Demande Rapide</h3>
-                    <p class="text-xs text-gray-400 mb-6" data-i18n="form_subtitle">Remplissez le formulaire ci-dessous pour être redirigé vers notre WhatsApp</p>
-                    
-                    <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-semibold text-gray-300 mb-1" data-i18n="f_name">Nom Complet *</label>
-                            <input type="text" id="custName" required placeholder="Votre nom" class="w-full bg-dark-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 text-sm">
-                        </div>
+                <!-- SOCIALS -->
+                <div class="mt-10 pt-8 border-t border-gold-500/20">
 
-                        <div>
-                            <label class="block text-xs font-semibold text-gray-300 mb-1" data-i18n="f_event">Type d'Événement</label>
-                            <select id="custEvent" class="w-full bg-dark-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 text-sm">
-                                <option value="Mariage (Wedding)">Mariage (Wedding)</option>
-                                <option value="Fiançailles (Engagement)">Fiançailles (Engagement)</option>
-                                <option value="Anniversaire (Birthday)">Anniversaire (Birthday)</option>
-                                <option value="Banquet & Traiteur">Dîner Privé / Service Traiteur</option>
-                                <option value="Autre Événement">Autre Événement</option>
-                            </select>
-                        </div>
+                    <h4
+                        class="text-sm font-bold text-white mb-4"
+                        data-i18n="social_title"
+                    >
+                        Suivez nos réalisations sur les réseaux sociaux :
+                    </h4>
 
-                        <div>
-                            <label class="block text-xs font-semibold text-gray-300 mb-1" data-i18n="f_date">Date Prévue</label>
-                            <input type="date" id="custDate" class="w-full bg-dark-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 text-sm">
-                        </div>
+                    <div class="flex flex-wrap gap-4">
 
-                        <div>
-                            <label class="block text-xs font-semibold text-gray-300 mb-1" data-i18n="f_msg">Détails ou Remarques</label>
-                            <textarea id="custMsg" rows="3" placeholder="Saisissez vos questions ici..." class="w-full bg-dark-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 text-sm"></textarea>
-                        </div>
+                        <a
+                            href="https://www.instagram.com/yassine_events"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-2 bg-dark-800 border border-gold-500/30 px-5 py-3 rounded-xl text-gold-400 hover:bg-gold-500 hover:text-black transition-all text-xs font-bold"
+                        >
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                            <span>Instagram @yassine_events</span>
+                        </a>
 
-                        <button type="submit" class="w-full gold-btn text-black font-bold py-3.5 rounded-xl text-sm shadow-lg mt-2 flex items-center justify-center gap-2">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span data-i18n="f_btn">Envoyer la Demande sur WhatsApp</span>
-                        </button>
-                    </form>
+                        <a
+                            href="https://www.tiktok.com/@yassine_events"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-2 bg-dark-800 border border-gold-500/30 px-5 py-3 rounded-xl text-gold-400 hover:bg-gold-500 hover:text-black transition-all text-xs font-bold"
+                        >
+                            <i class="fa-brands fa-tiktok text-lg"></i>
+                            <span>TikTok @yassine_events</span>
+                        </a>
+
+                    </div>
+
                 </div>
 
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark-900 py-8 border-t border-gold-500/20 text-center text-xs text-gray-500">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div class="flex items-center gap-2">
-                <span class="font-bold text-white font-serif-title">YASSINE EVENTS MARRAKECH</span>
-                <span>© 2026. Tous droits réservés.</span>
+
+            <!-- FORM -->
+            <div class="glass-card p-8 rounded-3xl border border-gold-500/30">
+
+                <h3
+                    class="text-xl font-bold text-white mb-2"
+                    data-i18n="form_title"
+                >
+                    Formulaire de Demande Rapide
+                </h3>
+
+                <p
+                    class="text-xs text-gray-400 mb-6"
+                    data-i18n="form_subtitle"
+                >
+                    Remplissez le formulaire ci-dessous pour être redirigé vers WhatsApp.
+                </p>
+
+                <form
+                    id="whatsappForm"
+                    class="space-y-4"
+                >
+
+                    <!-- NAME -->
+                    <div>
+
+                        <label
+                            for="custName"
+                            class="block text-xs font-semibold text-gray-300 mb-1"
+                            data-i18n="f_name"
+                        >
+                            Nom Complet *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="custName"
+                            required
+                            autocomplete="name"
+                            placeholder="Votre nom"
+                            data-placeholder="name_placeholder"
+                            class="w-full bg-dark-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 text-sm"
+                        >
+
+                    </div>
+
+                    <!-- EVENT -->
+                    <div>
+
+                        <label
+                            for="custEvent"
+                            class="block text-xs font-semibold text-gray-300 mb-1"
+                            data-i18n="f_event"
+                        >
+                            Type d'Événement
+                        </label>
+
+                        <select
+                            id="custEvent"
+                            class="w-full bg-dark-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 text-sm"
+                        >
+
+                            <option value="Mariage">
+                                Mariage
+                            </option>
+
+                            <option value="Fiançailles">
+                                Fiançailles
+                            </option>
+
+                            <option value="Anniversaire">
+                                Anniversaire
+                            </option>
+
+                            <option value="Banquet & Traiteur">
+                                Dîner Privé / Service Traiteur
+                            </option>
+
+                            <option value="Location de matériel">
+                                Location de matériel
+                            </option>
+
+                            <option value="Autre événement">
+                                Autre Événement
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- DATE -->
+                    <div>
+
+                        <label
+                            for="custDate"
+                            class="block text-xs font-semibold text-gray-300 mb-1"
+                            data-i18n="f_date"
+                        >
+                            Date Prévue
+                        </label>
+
+                        <input
+                            type="date"
+                            id="custDate"
+                            class="w-full bg-dark-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 text-sm"
+                        >
+
+                    </div>
+
+                    <!-- MESSAGE -->
+                    <div>
+
+                        <label
+                            for="custMsg"
+                            class="block text-xs font-semibold text-gray-300 mb-1"
+                            data-i18n="f_msg"
+                        >
+                            Détails ou Remarques
+                        </label>
+
+                        <textarea
+                            id="custMsg"
+                            rows="4"
+                            placeholder="Saisissez vos questions ici..."
+                            class="w-full bg-dark-900 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold-500 text-sm"
+                        ></textarea>
+
+                    </div>
+
+                    <!-- SUBMIT -->
+                    <button
+                        type="submit"
+                        class="w-full gold-btn text-black font-bold py-3.5 rounded-xl text-sm shadow-lg mt-2 flex items-center justify-center gap-2"
+                    >
+
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+
+                        <span data-i18n="f_btn">
+                            Envoyer la Demande sur WhatsApp
+                        </span>
+
+                    </button>
+
+                </form>
+
             </div>
-            <div>
-                Organisation d'Événements de Luxe & Traiteur • Marrakech, Maroc
-            </div>
+
         </div>
-    </footer>
 
-    <!-- Translation Dictionary & Controls -->
-    <script>
-        const translations = {
-            fr: {
-                nav_about: "À Propos",
-                nav_services: "Nos Services",
-                nav_gallery: "Réalisations",
-                nav_contact: "Contact",
-                btn_whatsapp: "Demander les Tarifs",
-                hero_location: "Marrakech • Royaume du Maroc",
-                hero_title: "Nous transformons vos moments en souvenirs inoubliables",
-                hero_subtitle: "Planification d'événements d'exception, traiteur de prestige et décoration sur-mesure de A à Z à Marrakech.",
-                price_notice: "Remarque : Les tarifs et devis personnalisés sont communiqués exclusivement sur WhatsApp.",
-                btn_ask_price: "Demander les Tarifs sur WhatsApp",
-                btn_gallery: "Découvrir Nos Réalisations",
-                stat_1: "Événements d'Exception à Marrakech",
-                stat_2: "Raffinement & Attention au Détail",
-                stat_3: "Ans d'Expertise Événementielle",
-                stat_4: "Traiteur & Art de la Table Fassi",
-                about_tag: "À Propos de Yassine Events",
-                about_title: "L'hospitalité marocaine alliée au luxe moderne",
-                about_desc1: "Basée au cœur de Marrakech, l'agence YASSINE EVENTS est spécialisée dans l'organisation clé en main de mariages princier, réceptions privées et événements haut de gamme.",
-                about_desc2: "Que vous rêviez d'un mariage traditionnel marocain dans un Riad féerique, d'une soirée de fiançailles élégante ou d'un banquet d'anniversaire raffiné, notre équipe prend en charge l'ensemble de la scénographie et du service.",
-                feat_1_title: "Coordination Complète à Marrakech",
-                feat_1_sub: "Supervision méticuleuse le jour J",
-                feat_2_title: "Équipements & Vaisselle VIP",
-                feat_2_sub: "Mobilier et vaisselle dorée haut de gamme",
-                serv_tag: "Nos Services Exclusifs",
-                serv_title: "Une prestation sur-mesure pour chaque événement",
-                s1_title: "1. Organisation & Planning Global",
-                s1_desc: "Gestion intégrale de votre événement à Marrakech pour vivre des moments uniques sans aucun stress.",
-                s2_title: "2. Décoration & Scénographie",
-                s2_desc: "Scène de mariés personnalisée (N&M), lanternes artisanales en cuivre et décors floraux majestueux.",
-                s3_title: "3. Service Traiteur (Catering)",
-                s3_desc: "Gastronomie marocaine raffinée et buffets internationaux présentés dans de la vaisselle dorée VIP.",
-                s4_title: "4. Location de Matériel & Vaisselle",
-                s4_desc: "Location de tables rondes, chaises VIP, vaisselle avec bordures dorées et lustres marocains.",
-                s5_title: "5. Animation & Shows Musique",
-                s5_desc: "Orchestres en direct, DJ professionnels, troupes folkloriques marocaines et spectacles envoûtants.",
-                gal_tag: "Galerie Photos",
-                gal_title: "Aperçu de Nos Réalisations à Marrakech",
-                g1_title: "Espace Mariés lumineux avec arche florale et monogramme doré (N&M)",
-                g2_title: "Art de la table raffiné avec assiettes à bordures dorées et couvercle en brocard",
-                g3_title: "Lanternes marocaines suspendues en cuivre sculpté à la main",
-                g4_title: "Espace traditionnel pour cérémonie de Henné avec tajines en verre vert",
-                g5_title: "Candélabres dorés hauts et bougies torsadées pour dîners d'exception",
-                g6_title: "Aménagement de banquets dans les plus beaux Riads et Salles de Marrakech",
-                cta_heading: "Vous planifiez un événement à Marrakech ?",
-                cta_text: "Contactez notre équipe directement sur WhatsApp pour obtenir un devis personnalisé et réserver la date de votre célébration.",
-                cta_button: "Discuter sur WhatsApp (+212 661-691042)",
-                contact_tag: "Siège & Coordonnées",
-                contact_title: "Contactez YASSINE EVENTS",
-                c_loc_label: "Localisation",
-                c_loc_val: "Marrakech - Royaume du Maroc",
-                c_phone_label: "Téléphone & WhatsApp Direct",
-                c_price_note: "Remarque : Les détails tarifaires et devis personnalisés sont donnés uniquement sur WhatsApp.",
-                social_title: "Suivez nos réalisations sur les réseaux sociaux :",
-                form_title: "Formulaire de Demande Rapide",
-                form_subtitle: "Remplissez le formulaire ci-dessous pour être redirigé vers notre WhatsApp",
-                f_name: "Nom Complet *",
-                f_event: "Type d'Événement",
-                f_date: "Date Prévue",
-                f_msg: "Détails ou Remarques",
-                f_btn: "Envoyer la Demande sur WhatsApp"
-            },
-            ar: {
-                nav_about: "من نحن",
-                nav_services: "خدماتنا",
-                nav_gallery: "معرض الأعمال",
-                nav_contact: "تواصل معنا",
-                btn_whatsapp: "طلب الأسعار",
-                hero_location: "مراكش • المملكة المغربية",
-                hero_title: "نحول لحظاتكم الخاصة إلى ذكريات لا تُنسى",
-                hero_subtitle: "التخطيط التنفيذي الشامل وتصميم المناسبات الفاخرة من ألف إلى الياء بمدينة مراكش.",
-                price_notice: "ملاحظة: تفاصيل أسعار الباقات والخدمات تُعطى حصرياً عبر التواصل المباشر في الواتساب.",
-                btn_ask_price: "طلب الأسعار عبر الواتساب",
-                btn_gallery: "استكشف صور أعمالنا",
-                stat_1: "مناسبة فاخرة بمدينة مراكش",
-                stat_2: "دقة وإتقان في التفاصيل",
-                stat_3: "سنوات من الخبرة المغربية",
-                stat_4: "ترايتور ومعدات رفيعة المستوى",
-                about_tag: "عن Yassine Events مراكش",
-                about_title: "أصالة الضيافة المغربية مع الفخامة العصرية",
-                about_desc1: "في YASSINE EVENTS بمراكش، نؤمن بأن كل مناسبة تحمل قصة فريدة تستحق أن تُحكى بأعلى درجات الأناقة والإتقان.",
-                about_desc2: "سواء كنت تخطط لحفل زفاف أسطوري، ليلة خطوبة، عيد ميلاد، أو مأدبة فاخرة، يتكفل فريقنا بتحويل رؤيتك إلى واقع مبهر.",
-                feat_1_title: "إشراف ميداني كامل بمراكش",
-                feat_1_sub: "متابعة كافة التفاصيل بدقة متناهية",
-                feat_2_title: "تجهيزات وأواني فاخرة",
-                feat_2_sub: "Vaisselle وأواني مذهبة حديثة",
-                serv_tag: "خدماتنا بمراكش",
-                serv_title: "كل ما تحتاجه لمناسبة مثالية",
-                s1_title: "1. التخطيط والتنظيم الشامل",
-                s1_desc: "نستلم زمام الأمور بالكامل لنرفع عنك أعباء التخطيط والتنفيذ بأعلى درجات الاحترافية.",
-                s2_title: "2. الديكور والتنسيق الفاخر",
-                s2_desc: "مسارح عرسان مخصصة (N&M)، ثريات نحاسية مغربية معلقة، وتنسيقات زهور طبيعية راقية.",
-                s3_title: "3. خدمات الضيافة والترايتور",
-                s3_desc: "أطباق المطبخ المغربي الأصيل والمطبخ العالمي يقدم بأطقم أواني فاخرة ومذهبة.",
-                s4_title: "4. تأجير المعدات والأواني",
-                s4_desc: "كراسي VIP، طاولات مستديرة، أواني تقديم Vaisselle بنقوش مذهبة، وفوانيس نحاسية تقليدية.",
-                s5_title: "5. العروض الترفيهية والموسيقى",
-                s5_desc: "فرق أوركسترا حية، دي جي محترف، ومجموعات فلكلورية مغربية لإضفاء بهجة ساحرة.",
-                gal_tag: "معرض صور من أعمالنا الحقيقية",
-                gal_title: "فخامة التجهيزات والديكور بمراكش",
-                g1_title: "مسرح العروسين بخلفية الإضاءة الدائرية والأحرف المذهبة (N&M)",
-                g2_title: "تنسيق مائدة الضيافة بأواني وأطقم مذهبة فاخرة",
-                g3_title: "فوانيس نحاسية مغربية معلقة لإضاءة ساحرة",
-                g4_title: "تجهيز جلسات الحناء والمناسبات التقليدية بأواني خضراء ومذهبة",
-                g5_title: "شمعدانات ذهبية فاخرة مع تنسيق الورود البيضاء",
-                g6_title: "تنظيم مآدب الحفلات داخل قاعات ورياضات مراكش الأنيقة",
-                cta_heading: "تخطط لمناسبة قريبة بمدينة مراكش؟",
-                cta_text: "تواصل معنا مباشرة عبر الواتساب للحصول على تفاصيل خدماتنا واستشارة مجانية حول الباقات والأسعار المخصصة لمناسبتك.",
-                cta_button: "تواصل عبر الواتساب (+212 661-691042)",
-                contact_tag: "المقر والتواصل",
-                contact_title: "يسعدنا تواصلكم معنا",
-                c_loc_label: "المقر والمدينة",
-                c_loc_val: "مراكش - المملكة المغربية",
-                c_phone_label: "الهاتف والواتساب المباشر",
-                c_price_note: "ملاحظة: تفاصيل أسعار الباقات والخدمات تُعطى حكراً عبر التواصل المباشر في الواتساب.",
-                social_title: "تابعونا على مواقع التواصل الاجتماعي:",
-                form_title: "إرسال استفسار حجز مباشر",
-                form_subtitle: "قم بتعبئة التفاصيل وسيتم تحويلك فوراً للواتساب للتحدث مع المسؤول",
-                f_name: "الاسم الكريم *",
-                f_event: "نوع المناسبة",
-                f_date: "تاريخ المناسبة المتوقع",
-                f_msg: "رسالة إضافية",
-                f_btn: "إرسال واستفسار على الواتساب"
-            },
-            en: {
-                nav_about: "About Us",
-                nav_services: "Services",
-                nav_gallery: "Gallery",
-                nav_contact: "Contact",
-                btn_whatsapp: "Get Pricing",
-                hero_location: "Marrakech • Kingdom of Morocco",
-                hero_title: "Transforming Your Moments Into Unforgettable Memories",
-                hero_subtitle: "Comprehensive luxury event planning, catering & decor from A to Z in Marrakech.",
-                price_notice: "Note: Custom quotes & price details are provided exclusively via WhatsApp.",
-                btn_ask_price: "Get Quotes on WhatsApp",
-                btn_gallery: "Explore Our Portfolio",
-                stat_1: "Luxury Events in Marrakech",
-                stat_2: "Refinement & Attention to Detail",
-                stat_3: "Years of Event Expertise",
-                stat_4: "VIP Catering & Table Art",
-                about_tag: "About Yassine Events",
-                about_title: "Authentic Moroccan Hospitality Meets Modern Luxury",
-                about_desc1: "Based in Marrakech, YASSINE EVENTS agency specializes in turnkey wedding planning, private receptions, and high-end events.",
-                about_desc2: "Whether you dream of a royal wedding in a fairytale Riad, an elegant engagement party, or a refined birthday banquet, our team handles all design and service.",
-                feat_1_title: "Full On-Site Coordination in Marrakech",
-                feat_1_sub: "Meticulous supervision on your event day",
-                feat_2_title: "Luxury Equipment & Vaisselle",
-                feat_2_sub: "Gold-accented tableware and VIP furniture",
-                serv_tag: "Our Exclusive Services",
-                serv_title: "A Tailor-Made Experience for Every Occasion",
-                s1_title: "1. Full Event Planning & Management",
-                s1_desc: "End-to-end management from A to Z for a seamless stress-free experience.",
-                s2_title: "2. Scenography & Decor Design",
-                s2_desc: "Custom bride & groom stages (N&M), hanging brass lanterns, and luxury floral design.",
-                s3_title: "3. Catering Services (Traiteur)",
-                s3_desc: "Authentic Moroccan gastronomy and international cuisine served in luxury gold tableware.",
-                s4_title: "4. Equipment & Vaisselle Rental",
-                s4_desc: "VIP chairs, round tables, gold-rimmed tableware, and handmade brass lanterns.",
-                s5_title: "5. Entertainment & Live Shows",
-                s5_desc: "Live orchestra bands, professional DJ, and traditional Moroccan folklore performances.",
-                gal_tag: "Photo Gallery",
-                gal_title: "Glimpse of Our Setups in Marrakech",
-                g1_title: "Illuminated bride & groom stage with floral arch and gold monogram (N&M)",
-                g2_title: "Refined table art featuring gold-rimmed plates and brocade covers",
-                g3_title: "Handcrafted hanging Moroccan brass lanterns for enchanting light",
-                g4_title: "Traditional Henna setup with green glass decor",
-                g5_title: "Tall gold candelabras with white floral centerpieces",
-                g6_title: "Grand banquet arrangements in Marrakech Riads and Palaces",
-                cta_heading: "Planning an upcoming event in Marrakech?",
-                cta_text: "Contact our team directly on WhatsApp for service details and custom pricing.",
-                cta_button: "Chat on WhatsApp (+212 661-691042)",
-                contact_tag: "Location & Contact",
-                contact_title: "Contact YASSINE EVENTS",
-                c_loc_label: "Location",
-                c_loc_val: "Marrakech - Kingdom of Morocco",
-                c_phone_label: "Direct Phone & WhatsApp",
-                c_price_note: "Note: Pricing details are provided exclusively via direct WhatsApp chat.",
-                social_title: "Follow us on social media:",
-                form_title: "Direct WhatsApp Inquiry",
-                form_subtitle: "Fill in the details to be redirected instantly to our WhatsApp manager",
-                f_name: "Full Name *",
-                f_event: "Event Type",
-                f_date: "Expected Event Date",
-                f_msg: "Additional Message / Details",
-                f_btn: "Send Inquiry to WhatsApp"
-            },
-            es: {
-                nav_about: "Nosotros",
-                nav_services: "Servicios",
-                nav_gallery: "Galería",
-                nav_contact: "Contacto",
-                btn_whatsapp: "Consultar Precios",
-                hero_location: "Marrakech • Reino de Marruecos",
-                hero_title: "Transformamos tus momentos en recuerdos inolvidables",
-                hero_subtitle: "Planificación de eventos de lujo y catering de la A a la Z en Marrakech.",
-                price_notice: "Nota: Los precios se facilitan exclusivamente por WhatsApp.",
-                btn_ask_price: "Solicitar Precios por WhatsApp",
-                btn_gallery: "Ver Trabajos Realizados",
-                stat_1: "Eventos de Lujo en Marrakech",
-                stat_2: "Cuidado en los Detalles",
-                stat_3: "Años de Experiencia Marroquí",
-                stat_4: "Catering y Equipamiento VIP",
-                about_tag: "Sobre Yassine Events",
-                about_title: "La Auténtica Hospitalidad Marroquí unida al Lujo Moderno",
-                about_desc1: "Ubicada en Marrakech, YASSINE EVENTS se especializa en la organización integral de bodas, banquetes y eventos exclusivos.",
-                about_desc2: "Ya sea una boda real en un Riad de ensueño o una cena privada, nuestro equipo se encarga de todo el montaje.",
-                feat_1_title: "Coordinación Completa en Marrakech",
-                feat_1_sub: "Supervisión detallada el día del evento",
-                feat_2_title: "Equipamiento y Vajilla VIP",
-                feat_2_sub: "Mobiliario y vajilla dorada de alta gama",
-                serv_tag: "Nuestros Servicios",
-                serv_title: "Servicio a medida para cada ocasión",
-                s1_title: "1. Organización y Gestión Integral",
-                s1_desc: "Gestión completa de principio a fin para una experiencia impecable.",
-                s2_title: "2. Decoración y Diseño de Lujo",
-                s2_desc: "Escenarios para novios (N&M), faroles de latón y arreglos florales majestuosos.",
-                s3_title: "3. Servicio de Catering (Traiteur)",
-                s3_desc: "Gastronomía marroquí auténtica y cocina internacional servida en vajilla dorada.",
-                s4_title: "4. Alquiler de Material y Vajilla",
-                s4_desc: "Sillas VIP, mesas redondas, vajilla dorada y faroles artesanales de latón.",
-                s5_title: "5. Entretenimiento y Música",
-                s5_desc: "Orquestas en directo, DJ profesional y grupos folclóricos marroquíes.",
-                gal_tag: "Galería de Fotos",
-                gal_title: "Nuestros Montajes en Marrakech",
-                g1_title: "Escenario de novios con iluminación circular y monograma dorado (N&M)",
-                g2_title: "Montaje de mesa elegante con vajilla de bordes dorados",
-                g3_title: "Faroles marroquíes de latón suspendidos para una luz mágica",
-                g4_title: "Ambientación tradicional para ceremonias de henna",
-                g5_title: "Candelabros dorados con centros de mesa florales",
-                g6_title: "Banquete en los majestuosos Riads de Marrakech",
-                cta_heading: "¿Planeas un evento en Marrakech?",
-                cta_text: "Contáctanos directamente en WhatsApp para obtener un presupuesto personalizado.",
-                cta_button: "Hablar por WhatsApp (+212 661-691042)",
-                contact_tag: "Sede y Contacto",
-                contact_title: "Contacta con YASSINE EVENTS",
-                c_loc_label: "Ubicación",
-                c_loc_val: "Marrakech - Reino de Marruecos",
-                c_phone_label: "Teléfono y WhatsApp Directo",
-                c_price_note: "Nota: Los precios se facilitan exclusivamente por WhatsApp.",
-                social_title: "Síguenos en Redes Sociales:",
-                form_title: "Consulta Directa por WhatsApp",
-                form_subtitle: "Rellena los datos para conectar directamente por WhatsApp",
-                f_name: "Nombre Completo *",
-                f_event: "Tipo de Evento",
-                f_date: "Fecha Estimada",
-                f_msg: "Mensaje / Detalles",
-                f_btn: "Enviar Consulta a WhatsApp"
-            }
-        };
+    </div>
 
-        function changeLanguage(lang) {
-            document.documentElement.lang = lang;
-            document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+</section>
 
-            document.getElementById('langSelect').value = lang;
-            document.getElementById('langSelectMobile').value = lang;
 
-            if (lang === 'ar') {
-                document.body.style.fontFamily = "'Cairo', sans-serif";
-            } else {
-                document.body.style.fontFamily = "'Montserrat', sans-serif";
-            }
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
 
-            document.querySelectorAll('[data-i18n]').forEach(element => {
-                const key = element.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) {
-                    element.textContent = translations[lang][key];
-                }
-            });
+<footer class="bg-dark-900 py-8 border-t border-gold-500/20 text-center text-xs text-gray-500">
+
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+
+        <div class="flex flex-col sm:flex-row items-center gap-2">
+
+            <span class="font-bold text-white font-serif-title">
+                YASSINE EVENTS MARRAKECH
+            </span>
+
+            <span>
+                © 2026. Tous droits réservés.
+            </span>
+
+        </div>
+
+        <div>
+            Organisation d'Événements de Luxe & Traiteur • Marrakech, Maroc
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ========================================================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================================================= -->
+
+<script>
+
+const translations = {
+
+    fr: {
+        nav_about: "À Propos",
+        nav_services: "Nos Services",
+        nav_gallery: "Réalisations",
+        nav_contact: "Contact",
+        btn_whatsapp: "Demander les Tarifs",
+
+        hero_location: "Marrakech • Royaume du Maroc",
+        hero_title: "Nous transformons vos moments en souvenirs inoubliables",
+        hero_subtitle: "Planification d'événements d'exception, traiteur de prestige et décoration sur-mesure de A à Z à Marrakech.",
+        price_notice: "Remarque : Les tarifs et devis personnalisés sont communiqués exclusivement sur WhatsApp.",
+        btn_ask_price: "Demander les Tarifs sur WhatsApp",
+        btn_gallery: "Découvrir Nos Réalisations",
+
+        stat_1: "Événements d'Exception à Marrakech",
+        stat_2: "Raffinement & Attention au Détail",
+        stat_3: "Ans d'Expertise Événementielle",
+        stat_4: "Traiteur & Art de la Table Fassi",
+
+        about_tag: "À Propos de Yassine Events",
+        about_title: "L'hospitalité marocaine alliée au luxe moderne",
+        about_desc1: "Basée au cœur de Marrakech, l'agence YASSINE EVENTS est spécialisée dans l'organisation clé en main de mariages, réceptions privées et événements haut de gamme.",
+        about_desc2: "Que vous rêviez d'un mariage traditionnel marocain dans un Riad féerique, d'une soirée de fiançailles élégante ou d'un banquet d'anniversaire raffiné, notre équipe prend en charge l'ensemble de la scénographie et du service.",
+        about_motto: "L'art de recevoir avec prestige",
+
+        feat_1_title: "Coordination Complète à Marrakech",
+        feat_1_sub: "Supervision méticuleuse le jour J",
+        feat_2_title: "Équipements & Vaisselle VIP",
+        feat_2_sub: "Mobilier et vaisselle dorée haut de gamme",
+
+        serv_tag: "Nos Services Exclusifs",
+        serv_title: "Une prestation sur-mesure pour chaque événement",
+
+        s1_title: "1. Organisation & Planning Global",
+        s1_desc: "Gestion intégrale de votre événement à Marrakech pour vivre des moments uniques sans aucun stress.",
+
+        s2_title: "2. Décoration & Scénographie",
+        s2_desc: "Scène de mariés personnalisée, lanternes artisanales en cuivre et décors floraux majestueux.",
+
+        s3_title: "3. Service Traiteur",
+        s3_desc: "Gastronomie marocaine raffinée et buffets internationaux présentés dans de la vaisselle dorée VIP.",
+
+        s4_title: "4. Location de Matériel & Vaisselle",
+        s4_desc: "Location de tables rondes, chaises VIP, vaisselle avec bordures dorées et lustres marocains.",
+
+        s5_title: "5. Animation & Shows Musique",
+        s5_desc: "Orchestres en direct, DJ professionnels, troupes folkloriques marocaines et spectacles envoûtants.",
+
+        gal_tag: "Galerie Photos",
+        gal_title: "Aperçu de Nos Réalisations à Marrakech",
+
+        g1_title: "Espace Mariés lumineux avec arche florale et monogramme doré",
+        g2_title: "Art de la table raffiné avec assiettes à bordures dorées",
+        g3_title: "Lanternes marocaines suspendues pour une ambiance élégante",
+        g4_title: "Espace traditionnel pour cérémonie marocaine",
+        g5_title: "Candélabres dorés et décoration florale",
+        g6_title: "Aménagement de banquets dans les plus beaux Riads de Marrakech",
+
+        cta_heading: "Vous planifiez un événement à Marrakech ?",
+        cta_text: "Contactez notre équipe directement sur WhatsApp pour obtenir un devis personnalisé.",
+        cta_button: "Discuter sur WhatsApp (+212 661-691042)",
+
+        contact_tag: "Siège & Coordonnées",
+        contact_title: "Contactez YASSINE EVENTS",
+        c_loc_label: "Localisation",
+        c_loc_val: "Marrakech - Royaume du Maroc",
+        c_phone_label: "Téléphone & WhatsApp Direct",
+        c_price_note: "Les détails tarifaires sont communiqués uniquement sur WhatsApp.",
+        social_title: "Suivez nos réalisations sur les réseaux sociaux:",
+
+        form_title: "Formulaire de Demande Rapide",
+        form_subtitle: "Remplissez le formulaire ci-dessous pour être redirigé vers WhatsApp.",
+        f_name: "Nom Complet *",
+        f_event: "Type d'Événement",
+        f_date: "Date Prévue",
+        f_msg: "Détails ou Remarques",
+        f_btn: "Envoyer la Demande sur WhatsApp",
+        name_placeholder: "Votre nom"
+    },
+
+    ar: {
+        nav_about: "من نحن",
+        nav_services: "خدماتنا",
+        nav_gallery: "معرض الأعمال",
+        nav_contact: "تواصل معنا",
+        btn_whatsapp: "طلب الأسعار",
+
+        hero_location: "مراكش • المملكة المغربية",
+        hero_title: "نحول لحظاتكم الخاصة إلى ذكريات لا تُنسى",
+        hero_subtitle: "تنظيم وتخطيط المناسبات الفاخرة والديكور والضيافة من الألف إلى الياء بمدينة مراكش.",
+        price_notice: "ملاحظة: تفاصيل الأسعار والعروض المخصصة يتم تقديمها حصرياً عبر الواتساب.",
+        btn_ask_price: "طلب الأسعار عبر الواتساب",
+        btn_gallery: "اكتشف أعمالنا",
+
+        stat_1: "مناسبة فاخرة بمدينة مراكش",
+        stat_2: "دقة وإتقان في التفاصيل",
+        stat_3: "سنوات من الخبرة",
+        stat_4: "ضيافة وتجهيزات VIP",
+
+        about_tag: "عن Yassine Events",
+        about_title: "أصالة الضيافة المغربية مع الفخامة العصرية",
+        about_desc1: "تتخصص YASSINE EVENTS في مراكش في تنظيم حفلات الزفاف والمناسبات الخاصة والفعاليات الفاخرة بشكل متكامل.",
+        about_desc2: "سواء كنتم تخططون لحفل زفاف مغربي فاخر، حفلة خطوبة، عيد ميلاد أو مأدبة راقية، يتكفل فريقنا بالتنظيم والديكور والخدمة.",
+        about_motto: "فن الضيافة بكل فخامة",
+
+        feat_1_title: "تنسيق وإشراف كامل بمراكش",
+        feat_1_sub: "متابعة دقيقة لجميع تفاصيل المناسبة",
+        feat_2_title: "تجهيزات وأواني VIP",
+        feat_2_sub: "أثاث وأواني فاخرة بلمسات ذهبية",
+
+        serv_tag: "خدماتنا الحصرية",
+        serv_title: "خدمة مخصصة لكل مناسبة",
+
+        s1_title: "1. التنظيم والتخطيط الشامل",
+        s1_desc: "نتكفل بتنظيم مناسبتكم بالكامل حتى تستمتعوا بيومكم بدون ضغط.",
+
+        s2_title: "2. الديكور والتنسيق",
+        s2_desc: "مسارح خاصة للعرسان، فوانيس نحاسية مغربية وتنسيقات زهور فاخرة.",
+
+        s3_title: "3. خدمات الترايتور",
+        s3_desc: "مأكولات مغربية راقية وبوفيهات عالمية تقدم في أواني فاخرة.",
+
+        s4_title: "4. كراء المعدات والأواني",
+        s4_desc: "طاولات، كراسي VIP، أواني بلمسات ذهبية وفوانيس مغربية.",
+
+        s5_title: "5. الموسيقى والعروض",
+        s5_desc: "فرق موسيقية حية، DJ محترف ومجموعات فلكلورية مغربية.",
+
+        gal_tag: "معرض الصور",
+        gal_title: "نماذج من أعمالنا في مراكش",
+
+        g1_title: "مسرح العروسين مع ديكور وإضاءة فاخرة",
+        g2_title: "تنسيق مائدة راقٍ بأواني ذات لمسات ذهبية",
+        g3_title: "فوانيس مغربية معلقة لأجواء ساحرة",
+        g4_title: "جلسة تقليدية للمناسبات المغربية",
+        g5_title: "شمعدانات ذهبية وتنسيق الورود",
+        g6_title: "تنظيم مآدب داخل رياضات وقاعات مراكش",
+
+        cta_heading: "هل تخططون لمناسبة في مراكش؟",
+        cta_text: "تواصلوا معنا مباشرة عبر الواتساب للحصول على عرض سعر مخصص.",
+        cta_button: "تواصل عبر الواتساب (+212 661-691042)",
+
+        contact_tag: "المقر والتواصل",
+        contact_title: "تواصلوا مع YASSINE EVENTS",
+        c_loc_label: "الموقع",
+        c_loc_val: "مراكش - المملكة المغربية",
+        c_phone_label: "الهاتف والواتساب",
+        c_price_note: "تفاصيل الأسعار والعروض تقدم حصرياً عبر الواتساب.",
+        social_title: "تابعونا على مواقع التواصل:",
+
+        form_title: "طلب معلومات سريع",
+        form_subtitle: "املأ النموذج وسيتم تحويلك مباشرة إلى الواتساب.",
+        f_name: "الاسم الكامل *",
+        f_event: "نوع المناسبة",
+        f_date: "تاريخ المناسبة",
+        f_msg: "تفاصيل أو ملاحظات",
+        f_btn: "إرسال الطلب عبر الواتساب",
+        name_placeholder: "اكتب اسمك"
+    },
+
+    en: {
+        nav_about: "About Us",
+        nav_services: "Services",
+        nav_gallery: "Gallery",
+        nav_contact: "Contact",
+        btn_whatsapp: "Get Pricing",
+
+        hero_location: "Marrakech • Kingdom of Morocco",
+        hero_title: "Transforming Your Moments Into Unforgettable Memories",
+        hero_subtitle: "Luxury event planning, catering and bespoke decoration from A to Z in Marrakech.",
+        price_notice: "Note: Custom quotes and pricing details are provided exclusively via WhatsApp.",
+        btn_ask_price: "Get Quotes on WhatsApp",
+        btn_gallery: "Explore Our Portfolio",
+
+        stat_1: "Luxury Events in Marrakech",
+        stat_2: "Refinement & Attention to Detail",
+        stat_3: "Years of Event Expertise",
+        stat_4: "VIP Catering & Table Art",
+
+        about_tag: "About Yassine Events",
+        about_title: "Authentic Moroccan Hospitality Meets Modern Luxury",
+        about_desc1: "Based in Marrakech, YASSINE EVENTS specializes in turnkey weddings, private receptions and high-end events.",
+        about_desc2: "Whether you dream of a luxury Moroccan wedding, elegant engagement party or refined private banquet, our team handles the complete setup and service.",
+        about_motto: "The art of luxury hospitality",
+
+        feat_1_title: "Full Event Coordination",
+        feat_1_sub: "Meticulous supervision on your event day",
+        feat_2_title: "Luxury Equipment & Tableware",
+        feat_2_sub: "VIP furniture and gold-accented tableware",
+
+        serv_tag: "Our Exclusive Services",
+        serv_title: "A Tailor-Made Experience for Every Occasion",
+
+        s1_title: "1. Full Event Planning",
+        s1_desc: "Complete event management in Marrakech for a seamless and stress-free experience.",
+
+        s2_title: "2. Decoration & Scenography",
+        s2_desc: "Custom wedding stages, handcrafted brass lanterns and luxury floral decoration.",
+
+        s3_title: "3. Catering Services",
+        s3_desc: "Refined Moroccan gastronomy and international buffets served in luxury tableware.",
+
+        s4_title: "4. Equipment & Tableware Rental",
+        s4_desc: "VIP chairs, round tables, gold-rimmed tableware and Moroccan lanterns.",
+
+        s5_title: "5. Entertainment & Music",
+        s5_desc: "Live orchestras, professional DJs and traditional Moroccan performances.",
+
+        gal_tag: "Photo Gallery",
+        gal_title: "A Glimpse of Our Work in Marrakech",
+
+        g1_title: "Elegant bride and groom stage with luxury decoration",
+        g2_title: "Refined table setup with gold-accented tableware",
+        g3_title: "Handcrafted Moroccan lanterns for an enchanting atmosphere",
+        g4_title: "Traditional Moroccan event setup",
+        g5_title: "Gold candelabras and floral decoration",
+        g6_title: "Luxury banquets in Marrakech Riads and venues",
+
+        cta_heading: "Planning an event in Marrakech?",
+        cta_text: "Contact our team directly on WhatsApp for a personalized quote.",
+        cta_button: "Chat on WhatsApp (+212 661-691042)",
+
+        contact_tag: "Location & Contact",
+        contact_title: "Contact YASSINE EVENTS",
+        c_loc_label: "Location",
+        c_loc_val: "Marrakech - Kingdom of Morocco",
+        c_phone_label: "Direct Phone & WhatsApp",
+        c_price_note: "Pricing details are provided exclusively via WhatsApp.",
+        social_title: "Follow us on social media:",
+
+        form_title: "Quick WhatsApp Inquiry",
+        form_subtitle: "Fill in the form to be redirected directly to WhatsApp.",
+        f_name: "Full Name *",
+        f_event: "Event Type",
+        f_date: "Event Date",
+        f_msg: "Details or Message",
+        f_btn: "Send Inquiry via WhatsApp",
+        name_placeholder: "Your name"
+    },
+
+    es: {
+        nav_about: "Nosotros",
+        nav_services: "Servicios",
+        nav_gallery: "Galería",
+        nav_contact: "Contacto",
+        btn_whatsapp: "Consultar Precios",
+
+        hero_location: "Marrakech • Reino de Marruecos",
+        hero_title: "Transformamos tus momentos en recuerdos inolvidables",
+        hero_subtitle: "Planificación de eventos de lujo, catering y decoración personalizada de principio a fin en Marrakech.",
+        price_notice: "Nota: Los precios y presupuestos personalizados se proporcionan exclusivamente por WhatsApp.",
+        btn_ask_price: "Solicitar Precios por WhatsApp",
+        btn_gallery: "Ver Nuestro Trabajo",
+
+        stat_1: "Eventos de Lujo en Marrakech",
+        stat_2: "Cuidado y Atención al Detalle",
+        stat_3: "Años de Experiencia",
+        stat_4: "Catering y Equipamiento VIP",
+
+        about_tag: "Sobre Yassine Events",
+        about_title: "Hospitalidad Marroquí y Lujo Moderno",
+        about_desc1: "Con sede en Marrakech, YASSINE EVENTS se especializa en bodas, recepciones privadas y eventos exclusivos.",
+        about_desc2: "Ya sea una boda marroquí de lujo, una fiesta de compromiso o un banquete privado, nuestro equipo se encarga de todo el montaje y servicio.",
+        about_motto: "El arte de recibir con lujo",
+
+        feat_1_title: "Coordinación Completa",
+        feat_1_sub: "Supervisión detallada durante el evento",
+        feat_2_title: "Equipamiento y Vajilla VIP",
+        feat_2_sub: "Mobiliario y vajilla con detalles dorados",
+
+        serv_tag: "Nuestros Servicios",
+        serv_title: "Una experiencia personalizada para cada ocasión",
+
+        s1_title: "1. Organización Integral",
+        s1_desc: "Gestión completa de su evento para una experiencia elegante y sin estrés.",
+
+        s2_title: "2. Decoración y Escenografía",
+        s2_desc: "Escenarios personalizados, faroles artesanales y decoración floral de lujo.",
+
+        s3_title: "3. Servicio de Catering",
+        s3_desc: "Gastronomía marroquí refinada y buffets internacionales con vajilla de lujo.",
+
+        s4_title: "4. Alquiler de Material y Vajilla",
+        s4_desc: "Sillas VIP, mesas, vajilla dorada y faroles marroquíes.",
+
+        s5_title: "5. Entretenimiento y Música",
+        s5_desc: "Orquestas en directo, DJ profesionales y espectáculos tradicionales marroquíes.",
+
+        gal_tag: "Galería de Fotos",
+        gal_title: "Una Selección de Nuestros Trabajos en Marrakech",
+
+        g1_title: "Escenario elegante para los novios con decoración de lujo",
+        g2_title: "Mesa refinada con vajilla de detalles dorados",
+        g3_title: "Faroles marroquíes artesanales para una atmósfera mágica",
+        g4_title: "Montaje tradicional para eventos marroquíes",
+        g5_title: "Candelabros dorados y decoración floral",
+        g6_title: "Banquetes de lujo en Riads y espacios de Marrakech",
+
+        cta_heading: "¿Planeas un evento en Marrakech?",
+        cta_text: "Contáctanos directamente por WhatsApp para recibir un presupuesto personalizado.",
+        cta_button: "Hablar por WhatsApp (+212 661-691042)",
+
+        contact_tag: "Ubicación y Contacto",
+        contact_title: "Contacta con YASSINE EVENTS",
+        c_loc_label: "Ubicación",
+        c_loc_val: "Marrakech - Reino de Marruecos",
+        c_phone_label: "Teléfono y WhatsApp",
+        c_price_note: "Los precios se proporcionan exclusivamente por WhatsApp.",
+        social_title: "Síguenos en redes sociales:",
+
+        form_title: "Consulta Rápida por WhatsApp",
+        form_subtitle: "Completa el formulario para conectarte directamente por WhatsApp.",
+        f_name: "Nombre Completo *",
+        f_event: "Tipo de Evento",
+        f_date: "Fecha del Evento",
+        f_msg: "Detalles o Mensaje",
+        f_btn: "Enviar Consulta por WhatsApp",
+        name_placeholder: "Tu nombre"
+    }
+
+};
+
+
+// =========================================================
+// LANGUAGE
+// =========================================================
+
+function changeLanguage(lang) {
+
+    if (!translations[lang]) {
+        lang = 'fr';
+    }
+
+    document.documentElement.lang = lang;
+
+    document.documentElement.dir =
+        lang === 'ar' ? 'rtl' : 'ltr';
+
+    const desktopSelect =
+        document.getElementById('langSelect');
+
+    const mobileSelect =
+        document.getElementById('langSelectMobile');
+
+    if (desktopSelect) {
+        desktopSelect.value = lang;
+    }
+
+    if (mobileSelect) {
+        mobileSelect.value = lang;
+    }
+
+    if (lang === 'ar') {
+
+        document.body.style.fontFamily =
+            "'Cairo', sans-serif";
+
+    } else {
+
+        document.body.style.fontFamily =
+            "'Montserrat', sans-serif";
+    }
+
+
+    // TEXT TRANSLATIONS
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+
+        const key = element.getAttribute('data-i18n');
+
+        if (
+            translations[lang] &&
+            translations[lang][key] !== undefined
+        ) {
+            element.textContent =
+                translations[lang][key];
         }
 
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+    });
+
+
+    // PLACEHOLDERS
+    document.querySelectorAll('[data-placeholder]').forEach(element => {
+
+        const key =
+            element.getAttribute('data-placeholder');
+
+        if (
+            translations[lang] &&
+            translations[lang][key]
+        ) {
+            element.placeholder =
+                translations[lang][key];
+        }
+
+    });
+
+
+    // SAVE LANGUAGE
+    try {
+        localStorage.setItem(
+            'yassineEventsLanguage',
+            lang
+        );
+    } catch (error) {
+        console.warn('Language preference could not be saved.');
+    }
+
+}
+
+
+// =========================================================
+// MOBILE MENU
+// =========================================================
+
+const mobileMenuBtn =
+    document.getElementById('mobileMenuBtn');
+
+const mobileMenu =
+    document.getElementById('mobileMenu');
+
+const menuIcon =
+    document.getElementById('menuIcon');
+
+
+if (mobileMenuBtn && mobileMenu) {
+
+    mobileMenuBtn.addEventListener('click', () => {
+
+        const isHidden =
+            mobileMenu.classList.contains('hidden');
+
+        mobileMenu.classList.toggle('hidden');
+
+        if (menuIcon) {
+
+            menuIcon.className =
+                isHidden
+                    ? 'fa-solid fa-xmark text-2xl'
+                    : 'fa-solid fa-bars text-2xl';
+
+        }
+
+    });
+
+
+    // CLOSE MENU WHEN CLICKING A LINK
+    mobileMenu.querySelectorAll('a').forEach(link => {
+
+        link.addEventListener('click', () => {
+
+            mobileMenu.classList.add('hidden');
+
+            if (menuIcon) {
+                menuIcon.className =
+                    'fa-solid fa-bars text-2xl';
+            }
+
         });
 
-        function sendToWhatsApp(e) {
-            e.preventDefault();
-            const name = document.getElementById('custName').value;
-            const eventType = document.getElementById('custEvent').value;
-            const date = document.getElementById('custDate').value;
-            const msg = document.getElementById('custMsg').value;
+    });
 
-            const text = `Bonjour, je suis ${encodeURIComponent(name)}.%0AJe souhaite demander un devis pour un événement (${encodeURIComponent(eventType)}) à Marrakech.%0ADate prévue: ${encodeURIComponent(date || 'Non spécifiée')}%0ADétails: ${encodeURIComponent(msg)}`;
-            
-            window.open(`https://wa.me/212661691042?text=${text}`, '_blank');
+}
+
+
+// =========================================================
+// WHATSAPP FORM
+// =========================================================
+
+const whatsappForm =
+    document.getElementById('whatsappForm');
+
+
+if (whatsappForm) {
+
+    whatsappForm.addEventListener(
+        'submit',
+        sendToWhatsApp
+    );
+
+}
+
+
+function sendToWhatsApp(event) {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById('custName').value.trim();
+
+    const eventType =
+        document.getElementById('custEvent').value;
+
+    const date =
+        document.getElementById('custDate').value;
+
+    const message =
+        document.getElementById('custMsg').value.trim();
+
+
+    if (!name) {
+
+        alert(
+            document.documentElement.lang === 'ar'
+                ? 'المرجو إدخال الاسم.'
+                : 'Veuillez saisir votre nom.'
+        );
+
+        return;
+    }
+
+
+    const formattedDate =
+        date || (
+            document.documentElement.lang === 'ar'
+                ? 'غير محدد'
+                : 'Non spécifiée'
+        );
+
+
+    let whatsappMessage;
+
+
+    if (document.documentElement.lang === 'ar') {
+
+        whatsappMessage =
+`السلام عليكم، أنا ${name}.
+أرغب في الحصول على عرض سعر لتنظيم مناسبة في مراكش.
+
+نوع المناسبة: ${eventType}
+تاريخ المناسبة: ${formattedDate}
+
+التفاصيل:
+${message || 'لا توجد تفاصيل إضافية.'}`;
+
+    } else if (
+        document.documentElement.lang === 'en'
+    ) {
+
+        whatsappMessage =
+`Hello, my name is ${name}.
+I would like to request a quote for an event in Marrakech.
+
+Event type: ${eventType}
+Event date: ${formattedDate}
+
+Details:
+${message || 'No additional details.'}`;
+
+    } else if (
+        document.documentElement.lang === 'es'
+    ) {
+
+        whatsappMessage =
+`Hola, soy ${name}.
+Me gustaría solicitar un presupuesto para un evento en Marrakech.
+
+Tipo de evento: ${eventType}
+Fecha del evento: ${formattedDate}
+
+Detalles:
+${message || 'Sin detalles adicionales.'}`;
+
+    } else {
+
+        whatsappMessage =
+`Bonjour, je suis ${name}.
+Je souhaite demander un devis pour un événement à Marrakech.
+
+Type d'événement : ${eventType}
+Date prévue : ${formattedDate}
+
+Détails :
+${message || 'Aucun détail supplémentaire.'}`;
+
+    }
+
+
+    const whatsappURL =
+        'https://wa.me/212661691042?text=' +
+        encodeURIComponent(whatsappMessage);
+
+
+    window.open(
+        whatsappURL,
+        '_blank',
+        'noopener,noreferrer'
+    );
+
+}
+
+
+// =========================================================
+// LOAD SAVED LANGUAGE
+// =========================================================
+
+document.addEventListener(
+    'DOMContentLoaded',
+    () => {
+
+        let savedLanguage = 'fr';
+
+        try {
+
+            savedLanguage =
+                localStorage.getItem(
+                    'yassineEventsLanguage'
+                ) || 'fr';
+
+        } catch (error) {
+
+            savedLanguage = 'fr';
+
         }
-    </script>
+
+        changeLanguage(savedLanguage);
+
+    }
+);
+
+</script>
+
 </body>
 </html>
